@@ -14,10 +14,10 @@ library(sp)
 install.packages('sf')
 library(sf)
 coordinates(apt_price) <- ~coord_x + coord_y #좌표값 할당
-proj4string(apt_price) <- "+proj=longlat +datum=WGS84+no_defs" #좌표계(CRS) 정의
-
+proj4string(apt_price) <- "+proj=longlat +datum=WGS84 +no_defs" #좌표계(CRS) 정의
+class(apt_price)
 apt_price <- st_as_sf(apt_price) # sp형 -> sf형으로 변환
-
+class(apt_price)
 
 # geo dataframe visualization
 plot(apt_price$geometry, axes = T, pch =1 )
