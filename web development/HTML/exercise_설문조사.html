@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사설문조사</title>
+</head>
+<body>
+    <h1>nufyn 회사 설문조사</h1>
+
+    <form>
+        <fieldset>
+            <ul style="list-style:none;">
+                <li>
+                    <label>이름:</label>
+                    <input type="text" id="user-name" required placeholder="이름을 반드시 입력해주세요.">
+                </li>
+                <li>
+                    <label>주소:</label>
+                    <input type="text" id="addr" required placeholder="대구 달서구...">
+                </li>
+                <li>
+                    <label>회사:</label>
+                    <input type="text" id="addr" require placeholder="nufyn 회사">
+                </li>
+                <li>
+                    <label>성별:</label>
+                    <input type="radio" id="man" name="woman" value="남">
+                    <label for="man">남</label>
+                    <input type="radio" id="woman" name="woman" value="여">
+                    <label for="womanman">여</label>
+                </li>
+                <li>
+                    <label>전화번호 앞자리:</label>
+                    <input type="radio" id="etc" name="etc" value="etc">
+                    <label for="man">기타</label>
+                    <input type="radio" id="010" name="010" value="010">
+                    <label for="010">010</label>
+                </li>
+                <li>
+                    <label>좋아하는 동물은?</label>
+                    <input type="radio" id="dog" name="dog" value="dog">
+                    <label for="dog">개</label>
+                    <input type="radio" id="cat" name="cat" value="cat">
+                    <label for="cat">고양이</label>
+                </li>
+            </ul>
+            <!-- <label>
+                <select>
+                    <option value="special_3">선물용 3kg</option>
+                    <option value="special_5" selected>선물용 5kg</option>
+                </select>
+            </label> -->
+        </fieldset>
+    </form>
+
+</body>
+</html>

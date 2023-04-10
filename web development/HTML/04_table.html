@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블연습</title>
+    <style>
+        table { 
+    border: 1px solid;}
+        th, td {
+    border: 1px solid;
+    text-align: center;
+    padding: 10px 20px;}
+    </style>
+</head>
+  
+<h3>테이블 태그</h3>
+<hr>
+
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+        <td>1교시</td>
+        <td rowspan="2">국어</td>
+        <td>수학</td>
+        <td>영어</td>
+        <td colspan="2">체육</td>
+        <!-- <td>체육</td> -->
+    </tr>   
+   
+
+    <tr>
+        <td>2교시</td>
+        <!-- <td>국어</td> -->
+        <td>음악</td>
+        <td>영어</td>
+        <td>사회</td>
+        <td>과학</td>
+    </tr>
+    </tbody>
+
+
+</table>
+<hr>
+
+
+<table>
+    <tr>
+        <td>이름</td>
+        <td>세종대</td>
+        <td rowspan="3">사&nbsp;진</td>
+        <!-- &nbsp; 공백추가 -->
+    </tr>
+    <tr>
+        <td>전화번호</td>
+        <td>010-1234-5678</td>
+    </tr>
+    <tr>
+        <td>이메일</td>
+        <td>man@sejo9ing.co.kr</td>
+    </tr>
+    <tr>
+        <td>주소</td>
+        <td colspan="2">서울시 신촌 더좋은 국제대학교</td>
+    </tr>
+</table>
+
+
+
+
+<body>
+    
+</body>
+</html>
