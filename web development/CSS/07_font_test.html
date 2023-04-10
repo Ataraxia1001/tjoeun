@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font3</title>
+    <style>
+        body{
+            background: url(images/bg.jpg) no-repeat center fixed;
+        }
+        p{
+            width: 600px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .small-line{
+            line-height: 0.7;
+        }
+        .big-line{
+            line-height: 2.5;
+        }
+        .italic{
+            font-style: italic;
+            font-size: large;
+        }
+        .tstyle-2{
+            text-decoration: underline;  
+        }
+
+        /* make link without underline */
+        a{
+            text-decoration: none;
+        }
+
+        h1{
+            font-size: 120px;
+            color: rgba(255, 166, 0, 0.5);
+            text-shadow: 5px 5px 3px black;
+                      /* 가로, 세로, 번짐정도 */
+        }
+    </style>
+</head>
+<body style="margin-top: 40px; margin-left: 40px;">
+    <h1>레드향</h1>
+    <hr>
+    <p>껍질에 붉은 빛이 돌아 <span class="italic">레드향</span>이라고 부른다. 레드향은 <span class="tstyle-2">한라봉과 귤</span>한라봉과 귤을 교배한 것으로 일반귤보다 2~3배 크다.</p>
+    <p class="small-line">껍질에 붉은 빛이 돌아 레드향이라고 부른다. 레드향은 한라봉과 귤을 교배한 것으로 일반귤보다 2~3배 크다.</p>
+    <p class="big-line">껍질에 붉은 빛이 돌아 레드향이라고 부른다. 레드향은 <a href="#">한라봉과 귤</a>을 교배한 것으로 일반귤보다 2~3배 크다.</p>
+</body>
+</html>

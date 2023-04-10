@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li inside ul */
+        ul li{
+            color: red;
+        }
+
+        /* li inside lecture */
+        #lecture>li{
+            border: 1px solid blue;
+        }
+
+        /* both ul and ol  */
+        ul, ol{
+            background-color: powderblue;
+        }
+
+
+        #container{
+            width: 500px;
+            margin: 10px auto;
+
+        }
+        
+        p{
+            font-style: italic;
+        }
+
+        .accent{
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        
+        .bg{
+            background-color: #ddd;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+    <h1 style="color: green;">레드향</h1>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS</li>
+            <ol>
+                <li>Selector</li>
+                <li>declartion</li>
+            </ol>
+        <li>JavaScript</li>
+    </ol>
+    
+    <div id="container">
+        <h1 class="accent bg" style="color: green">레드향2</h1>
+        <p style="color: red;">껍질에 붉은 빛이 돌아 <span style="color:blue" class="accent">레드향</span>이라고 부른다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로 일반귤보다 2~3배 크다.</p>
+        <p>비타민c와 비타민p가 풍부해 건강에 좋다</p>
+    </div>
+
+
+</body>
+</html>

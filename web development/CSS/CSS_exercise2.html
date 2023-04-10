@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css exercise2</title>
+    <style>
+       .onetwo{
+        color: blue;
+       }
+       .lili1{
+        font-size: x-large;
+        font-weight: bold;
+       }
+       .lili2{
+        font-size: x-large;
+        font-weight: bold;
+       }
+       
+       /* solution
+       ol li{
+        color: blue;
+       }
+       ol > li {
+        font-size: x-large;
+        font-weight: bold;
+       } */
+    </style>
+</head>
+<body>
+    <h3>후손선택자</h3>
+    <hr>
+    <ol class="onetwo">
+        <li class="lili1">CSS3 선택자</li>
+        <li class="lili2">기본 선택자
+            <ul style="font-weight: 300; font-size: large;">
+                <li>전체 선택자</li>
+                <li>태그 선택자</li>
+                <li>아이디 선택자와 클래스 선택자</li>
+            </ul>
+        </li>
+    </ol>
+    <h1>또 다른 li</h1>
+    <ul style="font-size: large;">
+        <li>다른 li 1</li>
+        <li>다른 li 2</li>
+    </ul>
+</body>
+</html>

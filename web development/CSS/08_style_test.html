@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 5</title>
+    
+    <style>
+        .book1{
+            list-style-type: none;
+        }
+        .book2{
+            list-style-type: upper-alpha;
+        }
+        ul{
+            list-style-image: url(images/dot.png);
+        }
+        .inside{list-style-position: inside;}
+        .comlist{
+            list-style-image: none;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .comlist>li{
+            display: inline-block; 
+            /* 가로로배치 */
+            margin: 10px 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>더조은신촌</h1>
+    <ul class="comlist">
+        <li><a href="">회사소개</a></li>
+        <li><a href="">회사자료실</a></li>
+        <li><a href="">회사질문답변</a></li>
+        <li><a href="">회사동영상강의</a></li>
+        <li><a href="">회사커리큘럼</a></li>
+    </ul>
+
+
+
+
+    <h1>도서시리즈</h1>
+    <ul class="comlist">
+        <li>Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ul>
+    <ol class="book2">
+        <li class="inside">Do it! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다 시리즈</li>
+    </ol>
+</body>
+</html>
