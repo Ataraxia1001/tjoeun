@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box4</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-size: 20px;
+            border-width: 5px;
+            line-height: 100px;
+            margin: 15px;
+            display: inline-block;
+            border-style: solid;
+        }
+        #box1{border-width: 2px;}
+        #box2{border-width: thick thin;} 
+        /* top&bottom = thick, left&right = thin */
+
+        #box3{border-width: thick thin thin;}
+            /* top=thick  left&right=thin  bottom=thin */
+
+        #box4{border-width: 10px 5px 5px 10px;}
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+</body>
+</html>

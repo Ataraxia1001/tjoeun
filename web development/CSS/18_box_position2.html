@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {margin:0; padding: 0;}
+        p{width: 500px; height: 200px; background-color: #eee;
+        border: 1px solid #ccc; line-height: 2;}
+        #static{position: static; }
+        #relative-1{position: relative; }
+        #relative-2{position: relative; left:100px; top:-50px;}
+        /* relative avoids overlap. but -50px makes overlap */
+
+        #fixed{position: fixed; right:30px; top:30px;
+            width: 100px; height: 100px; background-color: black;}
+
+    </style>
+</head>
+<body>
+    <p id="static">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p id="relative-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p id="relative-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p id="fixed">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>
