@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="margin: 50px;">
+    <!-- <p>중간고사: <input type="text" id = "mid" placeholder="100점 만점으로 입력하세요"></p>
+    <p>기말고사: <input type="text" id = "final" placeholder="100점 만점으로 입력하세요"></p>
+    <p>학점: <input type="text" id = "homework" placeholder="100점 만점으로 입력하세요"></p>
+    <button onclick="weight_avg()">학점 계산</button>
+    <p id = "result"></p>
+    <script>
+        function weight_avg(){
+            const numTag1 = document.getElementById('mid');
+            const numTag2 = document.getElementById('final');
+            const numTag3 = document.getElementById('homework');
+            const numStr1 = numTag1.value;
+            const numStr2 = numTag2.value;
+            const numStr3 = numTag3.value;
+            const num1 = Number(numStr1);
+            const num2 = Number(numStr2);
+            const num3 = Number(numStr3);
+            const resTag = document.getElementById("result");
+            
+            var weiavg = 0.4*num1 + 0.4*num2 + 0.2*num3
+
+        }
+    </script> -->
+
+
+    <!-- solution: -->
+    <table>
+        <tr>
+            <td>중간고사:</td>
+            <td><input type="text" id="mid" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+        <tr>
+            <td>기말고사:</td>
+            <td><input type="text" id="final" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+        <tr>
+            <td>과제:</td>
+            <td><input type="text" id="report" placeholder="100점 만점으로 입력하세요"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="score()">학점계산</button></td>
+        </tr>
+        <tr>
+            <td>가중평균 </td>
+            <td id="average"></td>
+        </tr>
+        <tr>
+            <td>학점 </td>
+            <td id="grade"></td>
+        </tr>
+
+    </table>
+
+    <script>
+        function score() {
+            const mid = Number(document.getElementById('mid').value);
+            const final = Number(document.getElementById('final').value);
+            const report = Number(document.getElementById('report').value);
+            const average = mid * 0.3 + final * 0.5 + report * 0.2;
+            const avgTag = document.getElementById('average');
+            avgTag.innerHTML = average;
+
+            let grade;
+            switch (parseInt(average/10)){
+                case 10:
+                case 9:
+                    grade = 'A'; break;
+                case 8:
+                    grade = 'B'; break;
+                case 7:
+                    grade = 'C'; break;
+                case 6:
+                    grade = 'D'; break;
+                default:
+                    grade = 'F';
+            }
+            const gradeTag = document.getElementById('grade');
+            gradeTag.innerHTML = grade;
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

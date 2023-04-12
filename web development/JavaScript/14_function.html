@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // calculate sum of two values
+        // function sumALL(a, b){
+        //     let output = 0;
+        //     for (let i = a; i <= b; i++){
+        //         output += i
+        //     }
+        //     return output
+        // }
+        // console.log(`1부터 100까지의 합: ${sumALL(1, 100)}`)
+        // console.log(`1부터 500까지의 합: ${sumALL(1, 500)}`)
+
+
+
+
+        // search for minimum value in array
+        // function min(array) {
+        //     let output = array[0]
+        //     for (const item of array){
+        //         if (output > item){
+        //             output = item
+        //         }
+
+        //     }
+        //     return output
+        // }
+        // const testArray = [52, 273, 32, 103, 275, 24, 57];
+        // console.log(`${testArray} 중에서`)
+        // console.log(`최소값은 = ${min(testArray)}`)
+        
+
+        // 기본 매개변수 활용
+        function earnings(name, wage=8500, hours=40){
+            console.log(`${name} 님의 급여정보`)
+            console.log(`-시급:${wage}원`)
+            console.log(`-근무시간: ${hours}시간`)
+            console.log(`-급여:${wage*hours}원`)
+        }
+        earnings('구름')
+        earnings('별', 10000)
+        earnings('달', 10000, 52)
+
+
+    </script>
+    
+</body>
+</html>

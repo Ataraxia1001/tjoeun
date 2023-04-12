@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id = "num" placeholder="정수값을 넣으세요">
+    <button onclick="evenOdd()">확인</button>
+    <br>
+    <p id = "result"></p>
+
+    <script>
+        function evenOdd() {
+            
+            const numTag = document.getElementById('num');
+            const numStr = numTag.value;
+            const num = Number(numStr);
+            const resTag = document.getElementById("result");
+            if (num % 2 == 0) {
+                resTag.innerHTML = '<h4> 짝수입니다. </h4>'
+            }
+            else{
+                resTag.innerHTML = '<h4> 홀수입니다. </h4>'
+            }
+        }
+
+
+
+        // const num = Number(prompt ('숫자를 입력하세요', '숫자'));
+        // function evenOdd(num){
+        //     if(num % 2 == 0){
+        //         document.write("짝수입니다")
+        //     }
+        //     else{
+        //         document.write("홀수입니다")
+        //     }
+        // }
+    
+        // evenOdd(num);
+    </script>
+</body>
+</html>
