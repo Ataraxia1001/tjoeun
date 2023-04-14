@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 타이머 함수: setTimeout(함수, 시간), setInterval(함수, 시간)
+        // 종료: clearTimeout(타이머_ID), clearInterval(타이머_ID)
+        
+        // setTimeout(() => {
+        //     console.log(`1초후에 실행됩니다.`)
+        // }, 1000)
+
+        // let count = 0;
+        // setInterval(() => {
+        //     console.log(`1초마다 실행됩니다. ${count}번째`)
+        //     count++
+        // }, 1000)   // 1000 = 1 second
+         
+
+
+        
+        // 5초후에 종료하도록 수정
+        let id;
+        let count = 0;
+        setInterval(() => {
+            console.log(`1초마다 실행됩니다. ${count}번째`)
+            count++
+        }, 1000)
+
+        setTimeout(() => {
+            console.log(`타이머를 종료합니다.`)
+            clearInterval(id)
+        }, 5000)
+
+
+    </script>
+</body>
+</html>

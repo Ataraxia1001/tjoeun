@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function changeText() {
+        const header = document.getElementById('header')
+        const originalText = header.innerHTML;
+        header.innerHTML = "자바스크립트로 변경<br>";
+        header.innerHTML += `원래는 "${originalText}"이었습니다.`;
+    }
+
+    function escapeText() {
+        const header1 = document.getElementById('header');
+        header1.innerHTML = '<i>i 태그입니다.</i><br>'
+        header1.innerHTML += '&lt;i&gt;i 태그입니다.&lt;/i&gt;'
+    }
+    // id가 header1 요소를 텍스트를 From javascript로
+    document.querySelector('#header1').innerHTML = 'From javascript'; 
+    </script>
+
+</head>
+
+
+<body>
+    
+    
+    <h1 id="header1">header 1</h1>
+
+
+    <i>i 태그 입니다</i>
+    
+
+</body>
+</html>
+
+
+

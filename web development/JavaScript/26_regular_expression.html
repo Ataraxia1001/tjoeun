@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sample = 'ㅠㅠA quick brown fox 갈색의 재빠른 여우가 Jumps over 게으른 개 The lazy dog ㅋㅋ'
+        let newStr = sample.replace(/[A-Z]/, '대'); // '[A-Z]' 작동안함,  /[A-Z]/ 이렇게 해야 작동
+        console.log(newStr);
+        newStr = sample.replace(/o/, 'O') // 한개만 바꾸기
+        console.log(newStr);
+        newStr = sample.replace(/o/g, 'O') // 모두 바꾸기
+        console.log(newStr);
+        console.log(sample.replace(/[A-Z]\w+/g, 'XXX')) // 첫글자가 대문자인 단어 모두 XXX로 변환
+        console.log(sample.replace(/[ㄱ-ㅎㅏ-ㅣ가-힣]/g, '')); // 한글제거
+
+        //split
+        let fruits = '사과, 배, 감, 포도'
+        let fruitsArray = fruits.split(',');
+        console.log(fruitsArray);
+
+
+        fruits = '사과,   배,감,포도';
+        fruitsArray = fruits.split(',').map(s => s.trim);
+        console.log(fruitsArray);
+    </script>
+</body>
+</html>

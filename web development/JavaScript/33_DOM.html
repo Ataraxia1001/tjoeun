@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handler(){
+            // 첫번째 h1태그의 배경 yellow
+            document.querySelector('h1').style.backgroundColor = "yellow";
+
+            // 모든 h1태그의 글자색을 blue
+            let h1Array = document.querySelectorAll('h1');
+            for (let h1 of h1Array) {
+                h1.style.color = "blue";
+            }
+
+            // class가 header1인 요소의 배경을 오렌지로 바꾸기
+            let header1Array = document.querySelectorAll('.header1');
+            for (let h1 of header1Array)
+                 h1.style.backgroundColor = "orange";
+
+            // id가 header1 요소를 텍스트를 From javascript로
+            document.querySelector('#header1').innerHTML = 'From javascript';     
+        }
+    </script>
+</head>
+<body style="margin: 40px;">
+    <h1>header 1</h1>
+    <h1 class = "header1">header 1</h1>
+    <h1 id = "header1">header 1</h1>
+    <h1 class = "header1">header 1</h1>
+    <button onclick=""> Go!!!! </button>
+</body>
+</html>
+
+
+

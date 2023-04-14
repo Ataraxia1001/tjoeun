@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // // callback function 1 
+        // function callThreeTime(callback) {
+        //     for (let i=0; i < 3; i++ ){
+        //         callback(i)
+        //     }
+        // }
+
+        // function print(i){
+        //     console.log(`${i}번째 함수 호출`)
+        // }
+        
+
+
+        
+
+        // callback function 2
+        function callThreeTime(callback) {
+            for (let i=0; i < 3; i++ ){
+                callback(i)
+            }
+        }
+        callThreeTime(function (i){
+            console.log(`${i}번째 함수 호출`)
+        })
+        // callThreeTime(print)
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+

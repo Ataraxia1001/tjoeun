@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 50px;">
+    <input type="text" id="num1" placeholder="양의 정수를 입력하세요">
+    <br>
+    <input type="text" id="num2" placeholder="양의 정수를 입력하세요">
+    <br>
+    <button onclick="getCD()">공약수 추출</button>
+    <br>
+    <p id="result"></p>
+    <script>
+
+        function getCD() {
+            const a = Number(document.getElementById('num1').value);
+            const b = Number(document.getElementById('num2').value);
+            let commonDivisiors = [];
+            for (let i = 1; i <= ((a<b) ? a : b); i++){
+              if (a % i == 0 && b % i == 0)
+                commonDivisiors.push(i)
+        }
+         const res = document.getElementById("result");
+         res.innerHTML = `공약수: [${commonDivisiors.toString()}]`
+        }
+
+
+
+        // let array = [1,2,3];
+        // console.log(array);
+
+        // array[array.length] = 100;
+        // console.log(array);
+
+        // array.push('fantastic');
+        // console.log(array);
+        // array[10] = 0;
+
+        // 공약수
+        // const a = 12, b = 24
+        // let commonDivisiors = [];
+        // for (let i = 1; i <= ((a<b) ? a : b); i++){
+        //     if (a % i == 0 && b % i == 0)
+        //         commonDivisiors.push(i)
+        // }
+        // console.log(commonDivisiors)
+    </script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const books = [{
+            "name" : "자바스크립트 기초",
+            "price" : 18000,
+            "publisher" : "신촌출판사"
+        }, {
+            "name" : "파이썬 기초",
+            "price" : 30000,
+            "publisher" : "신촌출판사"
+        }, {
+            "name" : "R기초",
+            "price" : 29000,
+            "publisher" : "더조은출판사"
+        }]
+        console.log(JSON.stringify(books))
+        console.log(JSON.stringify(books, null, 2))
+        console.log(JSON.stringify(books, ['name'], 2))
+        // 2번째 매개변수는 객체에서 어떤 속성만 선택해서 추출하고 싶을때 사용하나
+        // 거의 사용하지 않으며 일반적으로 null을 넣어서 사용함
+        // 세번째 매개변수 2는 들여쓰기 2칸
+    </script>
+</body>
+</html>

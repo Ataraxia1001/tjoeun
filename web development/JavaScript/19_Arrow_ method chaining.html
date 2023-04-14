@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const array = [0,1,2,3,4,5,6,7,8,9]
+        // let numbers = array.map((value) => value * value);
+        // console.log(numbers);
+
+
+    
+        
+        // method chaining: use many functions
+        // filter -> map -> forEach
+        let numbers = [1,2,3,4,5,6,7,8,9];   
+        numbers.filter((value) => value % 2 === 0)  // get even number
+        .map((value) => value*value)  // multiply
+        .forEach((value) => {console.log(value)})  // log result
+
+    </script>
+</body>
+</html>

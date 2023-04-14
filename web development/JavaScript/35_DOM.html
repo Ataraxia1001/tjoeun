@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            const image = document.querySelector("#image");
+            image.src = "https://picsum.photos/640/360";
+            image.setAttribute('width', 700);
+            image.height = parseInt(700*360/640);
+
+            const width = image.getAttribute('width');
+            const height = image.height;
+            const info = `width ${width}, height: ${height}`;
+            document.querySelector('h3').innerHTML = info; 
+        }
+    </script>
+</head>
+<body style="margin: 40px">
+    <!-- 문서객체.getAttribute(속성이름) : 특정속성 추출
+    문서객체.getAttribute(속성이름, 값) : 특정속성값을 지정 -->
+    <!-- http://placekitten.com/640/360
+    http://picsum.photos/640/360 -->
+    <img id = image>
+    <h3></h3>
+</body>
+</html>
+
+
+
+

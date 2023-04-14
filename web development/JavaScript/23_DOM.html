@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="change">글자색 바꾸기</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At blanditiis, eligendi quibusdam dicta est animi minus nisi, 
+        debitis ut iste perspiciatis fugit perferendis maxime quidem numquam ipsa doloribus obcaecati? Doloribus.
+    </p>
+    <script>
+        // // 방법1: 웹요소를 변수로 지정 & 미리 만든 함수를 사용
+        // var changeBttn = document.querySelector("#change");
+        // changeBttn.onclick = changeColor;
+
+        // function changeColor() {
+        //     document.querySelector('p').style.color = "#f00";
+        // }
+
+        
+
+        // // 방법2: 웹요소를 따로 변수로 만들지 않고 사용
+        // document.querySelector("#change").onclick = changeColor
+        // function changeColor() {
+        //     document.querySelector('p').style.color = "#f00";
+        // }
+
+
+
+        //방법3: 함수를 직접선언
+        document.querySelector("#change").onclick = function () {
+            document.querySelector('p').style.color = "#f00";
+        }
+
+    </script>
+</body>
+</html>

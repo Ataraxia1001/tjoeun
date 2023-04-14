@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // document라는 문서 객체에 DOMContentLoaded라는 이벤트가 발생
+        // 매개변수로 지정한 콜백함수를 실행하라는 의미
+        document.addEventListener('DOMContentLoaded', () => {
+             const divs = document.querySelectorAll('body > div')
+             divs.forEach((div, index) => {
+                console.log(div, index)
+                const val = index * 10 // 0~24까지 반복
+                div.style.height = `10px`;
+                div.style.backgroundColor = `rgb(${val}, ${val}, ${val})`
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- div 25개 태그 만들기 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
