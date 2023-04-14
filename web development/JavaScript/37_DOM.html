@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            margin: 10px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="images/easys-1.jpg" id="cover">
+    </div>
+    <script>
+        // without eventlistener 
+        // var cover = document.getElementById("cover");
+        // function changePic() {
+        //     cover.src = "images/easys-2.jpg";
+        // }
+        // function originPic() {
+        //     cover.src = "images/easys-1.jpg"
+        // }
+
+
+        // EventListener and function is in var
+        var cover = document.getElementById("cover");
+        cover.addEventListener("mouseover", function () {
+            cover.src = "images/easys-2.jpg";
+        });
+        cover.addEventListener("mouseout", originPic, false)
+
+        function originPic() {
+            cover.src = "images/easys-1.jpg"
+        }
+
+    </script>
+</body>
+</html>

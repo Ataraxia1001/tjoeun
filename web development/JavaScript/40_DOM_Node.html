@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body id="container">
+    <h1>Web Programing</h1>
+    <p>공부할 주제를 기록해보세요</p>
+    <form action="">
+        <input type="text" id="subject" autofocus>
+        <button onclick="newRegister(); return false">추가</button>
+    </form>
+    <hr>
+    <ul id="itemList"></ul>
+    <script>
+        function newRegister() {
+            var newItem = document.createElement("li");
+            var subject = document.querySelector("#subject");
+            var newText = document.createTextNode(subject.value);
+            newItem.appendChild(newText);
+ 
+            var itemList = document.querySelector("#itemList");
+            itemList.insertBefore(newItem, itemList.childNodes[0]);
+            // 자식 노드중 첫번째 노드 앞에 추가
+            subject.value="";
+
+            var items = document.querySelectorAll('li');
+            // remove child with click
+            for (i=0; i < items.length; i++){
+                items[i].addEventListener("click", function(){
+                    if(this.parentNode)
+                        this.parentNode.removeChild(this);
+                })
+            }
+        }
+    </script>
+</body>
+</html>
+
+
